@@ -1,0 +1,292 @@
+body {
+    font-family: 'Tilda Sans VF' !important;
+    overflow-x: hidden;
+}
+
+.sector_main {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to top, black -15%, transparent 90%), url('../img/gov-bg.png') center center / cover no-repeat;
+    position: relative;
+}
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+html{height:100%}
+body{line-height:1}
+ol,ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}
+table{border-collapse:collapse;border-spacing:0}
+
+.sector_main-title {
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 92px;
+}
+
+.sector_main-content {
+    position: absolute;
+    top: 310px;
+    left: 350px;
+}
+
+.sector_main-subtitle {
+    font-weight: bold;
+    color: #afafaf;
+    font-size: 20px;
+    margin-top: 40px;
+}
+.sector_main-triggers {
+    margin-top: 90px;
+    display: flex;
+}
+.sector_main-btn {
+    height: 60px;
+    outline: none;
+    border: none;
+    font-family: 'Tilda Sans VF';
+    font-weight: bold;
+    color: #FFF;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.sector_main-btn.blue {
+    width: 250px;
+    background: #19869C;
+    color: #FFF;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sector_main-btn.white {
+    width: 200px;
+    background: #E0E0E0;
+    color: #000;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sector-main_arrow {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+.sector-main_arrow svg {
+    animation-duration: 1.5s;
+    animation-name: arrow;
+    animation-iteration-count: infinite;
+}
+@keyframes arrow {
+    0%, 100% {
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -o-transform: translateY(0);
+        transform: translateY(0);
+    }
+    50%, 55% {
+        -moz-transform: translateY(-7px);
+        -ms-transform: translateY(-7px);
+        -webkit-transform: translateY(-7px);
+        -o-transform: translateY(-7px);
+        transform: translateY(-7px);
+    }
+}
+.structure {
+    padding-top: 70px;
+}
+.structure .container {
+    max-width: 1280px;
+    margin: auto;
+}
+.structure-title, .structure-subtitle {
+    text-align: center;
+}
+.structure-title {
+    font-size: 42px;
+}
+.structure-subtitle {
+    font-size: 24px;
+    margin-top: 20px;
+}
+.card-photo {
+    width: 400px;
+    height: 600px;
+}
+.card-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.structure .container:first-child .structure-card-right {
+    margin-top: 50px;
+}
+.structure-card-right, .structure-card-left {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.card-text {
+    font-size: 32px;
+    text-align: center;
+}
+
+.recruit {
+    padding-top: 100px;
+}
+.recruit-title, .recruit-subtitle {
+    text-align: center;
+}
+.recruit-title {
+    font-size: 42px;
+}
+.recruit-subtitle {
+    font-size: 24px;
+    margin-top: 20px;
+}
+.recruit-card {
+    width: 580px;
+    min-height: 70px;
+    margin: auto;
+    border: 1px solid #000;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px 20px;
+}
+.card-hidden.active {
+    display: block;
+}
+.card-hidden {
+    display: none;
+    margin-top: 50px;
+    width: 100%;
+}
+.recruit-card svg {
+    height: 30px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.recruit-card svg.active {
+    transform: rotate(90deg);
+}
+.card-visible {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.recruit-card-btn {
+    width: 150px;
+    height: 30px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: #FFF;
+    outline: none;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 0;
+}
+.recruit-card-btn a {
+    text-decoration: none;
+    color: #000;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.recruit-card-title {
+    font-size: 18px;
+}
+.recruit-card-descr {
+    font-size: 16px;
+}
+.np .card-photo{
+    display: none;
+}
+.np {
+    height: 600px;
+}
+
+@media (max-width: 1280px) {
+    .sector_main-content {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+@media (max-width: 768px) {
+    .structure-card-right, .structure-card-left {
+        flex-direction: column;
+    }
+    .card-text {
+        order: 1;
+    }
+    .sector_main-content {
+        top: 190px;
+    }
+}
+@media (max-width: 640px) {
+    .recruit-card {
+        width: 90%;
+    }
+}
+@media (max-width: 560px) {
+    .sector_main-title {
+        font-size: 70px;
+    }
+    .sector_main-btn.blue {
+        width: 210px;
+    }
+    .sector_main-btn.white {
+        width: 175px;
+    }
+}
+@media (max-width: 430px) {
+    .sector_main-triggers {
+        margin-top: 50px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sector_main-btn.white {
+        width: 210px;
+        margin: 0;
+    }
+    .sector_main-btn.blue {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .sector_main-subtitle {
+        text-align: center;
+    }
+    .sector_main-title {
+        font-size: 55px;
+    }
+    .recruit-card {
+        width: 80%;
+    }
+}
+@media (max-width: 375px) {
+    .card-photo img {
+        object-fit: contain;
+    }
+    .sector_main-title {
+        font-size: 45px;
+    }
+    .card-photo {
+        width: 90%;
+    }
+    .sector_main-content {
+        top: 160px;
+    }
+}
